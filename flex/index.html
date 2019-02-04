@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex</title>
+    <Style>
+        div{
+            border: 1px solid orange;
+            margin: 2px;
+        }
+        #parent{
+            display: flex;
+        }
+        .child{
+            width:700px;
+            height: 300px;
+        }
+        .child:nth-child(1){
+            flex-shrink: 2;
+        }
+        .child:nth-child(2){
+            flex-shrink: 1;
+        }
+        .child:nth-child(3){
+            flex-shrink: 2;
+        }
+        .child:nth-child(4){
+            flex-shrink: 1;
+        }
+    </Style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
